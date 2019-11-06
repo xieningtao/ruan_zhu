@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <el-container>
-      <el-header></el-header>
-      <el-main>
+      <el-header>
+      
+      </el-header>
+      <el-main style="padding:0px">
         <div class="app_main">
           <div class="app_top">
             <el-image
@@ -11,26 +13,66 @@
               src="https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg"
             ></el-image>
             <div class="make_action_container">
+            <el-link href="action.html" target="_blank">
               <el-button class="make_action" type="primary">
-              <el-link href="action.html" target="_blank">免费制作</el-link>
+              免费制作
               </el-button>
+              </el-link>
             </div>
           </div>
           <div class="step_container">
             <el-timeline>
               <el-timeline-item timestamp="第一步" placement="top">
                 <el-card>
+                <div class="card_container">
                   <h4>填写申请表</h4>
+                  <div class="card_link">
+                  <el-link class="link_item" href="http://www.ccopyright.com.cn/" type="primary" target="_blank">前往填写</el-link>
+                  <el-link class="link_item" href="action.html"  type="primary" target="_blank">查看模板</el-link>
+                  <el-link class="link_item" href="action.html"  type="primary" target="_blank">具体步骤</el-link>
+                  </div>
+                </div>
                 </el-card>
               </el-timeline-item>
               <el-timeline-item timestamp="第二步" placement="top">
                 <el-card>
-                  <h4>格式化代码</h4>
+                  <div class="card_container">
+                   <h4>源代码文档</h4>
+                  <div class="card_link">
+                  <el-link class="link_item" href="http://www.ccopyright.com.cn/" type="primary" target="_blank">下载模板</el-link>
+                  <el-link class="link_item" href="action.html"  type="primary" target="_blank">查看例子</el-link>
+                  <el-link class="link_item" href="action.html"  type="primary" target="_blank">具体步骤</el-link>
+                  <el-link class="link_item" href="action.html"  type="primary" target="_blank">使用工具</el-link>
+                  </div>
+                </div>
                 </el-card>
               </el-timeline-item>
               <el-timeline-item timestamp="第三步" placement="top">
                 <el-card>
+                <div class="card_container">
                   <h4>书写说明文档</h4>
+                  <div class="card_link">
+                  <el-link class="link_item" href="http://www.ccopyright.com.cn/" type="primary" target="_blank">下载模板</el-link>
+                  <el-link class="link_item" href="action.html"  type="primary" target="_blank">查看例子</el-link>
+                  <el-link class="link_item" href="action.html"  type="primary" target="_blank">具体步骤</el-link>
+                  </div>
+                </div>
+                  
+                </el-card>
+              </el-timeline-item>
+                <el-timeline-item timestamp="第四步" placement="top">
+                <el-card>
+                  <h4>校验文件和打印资料</h4>
+                </el-card>
+              </el-timeline-item>
+                <el-timeline-item timestamp="第五步" placement="top">
+                <el-card>
+                  <h4>快递</h4>
+                </el-card>
+              </el-timeline-item>
+              <el-timeline-item timestamp="第六步" placement="top">
+                <el-card>
+                  <h4>等待受理邮件</h4>
                 </el-card>
               </el-timeline-item>
             </el-timeline>
@@ -135,6 +177,17 @@ export default {
   left: 0px;
   right: 0px;
 }
+.card_container {
+  display: flex;
+  flex-direction: column;
+}
+.card_link {
+  display: flex;
+  flex-direction: row;
+}
+.link_item {
+  margin-right: 10px;
+}
 .middle_btn {
   height: 50px;
   width: 100px;
@@ -145,6 +198,8 @@ export default {
 }
 .step_container {
   text-align: left;
+  width: 50%;
+  margin-top: 40px;
 }
 .app_top {
   position: relative;
@@ -153,6 +208,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
 }
 #left_code {
 }
