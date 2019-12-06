@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './views/Main.vue'
+import App from './ActionApp.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 

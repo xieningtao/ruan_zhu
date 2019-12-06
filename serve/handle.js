@@ -13,12 +13,13 @@ var upload = multer({ dest: 'upload/' }).any();
 //确定数据库名称vuetest
 // app.use(bodyParser.json());
 app.use(express.static('dist'));
+app.use(express.static('template'));
 
 //设置跨域访问
-app.all('*', function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    next();
-});
+// app.all('*', function (req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     next();
+// });
 
 // //增加书籍
 // app.post('/tranform', function(req, res, next) {

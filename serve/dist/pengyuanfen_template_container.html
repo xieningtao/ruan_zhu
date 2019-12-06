@@ -1,0 +1,117 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2019R11L1407273打印预览</title>
+    <style media=print>
+        .Noprint{display:none;}
+        .PageNext{page-break-before:always;}
+    </style>
+    <style type="text/css">
+        body{margin:0px; text-align:left; font-size:14px; background-color:#E8E8E8;}
+        .printDiv{
+            text-align:center;
+            margin: auto;
+            padding:10px 0px 0px 0px;
+            border-bottom:2px solid #999999;
+            background-color:#E8E8E8;}
+        .printBody{
+            text-align: center;
+            margin: auto;
+            padding:10px 0px 0px 0px;}
+    </style>
+    <script language="javascript" charset="utf-8" src="http://apply.ccopyright.com.cn/js/prototype-1.5.1.js"></script>
+    <script language="javascript">
+    function printCertificate(){
+        if(confirm("确定打印吗？"))
+        {
+            printIframe.focus();
+            window.print();
+        }
+    }
+    function printCertificate2(){
+        if(confirm("确定打印吗？"))
+        {
+            var printWindow = window.open(document.getElementById("printIframe").src);
+            printWindow.print();
+        }
+    }
+    function fun1(){
+        alert("若打印出现异常（如空白页现象），请允许浏览器弹窗，并点击弹窗打印按钮进行打印操作。")
+    }
+    function loadingIframeDiv(){
+        var ifbody = window.frames["printIframe"].document.body;
+        if(ifbody){
+            document.getElementById("printIframe").style.display = 'block';
+            document.getElementById("waitDiv").style.display = 'none';
+            window.frames.printIframe.resizeThisIframe();
+        }else{
+            setTimeout("loadingIframeDiv()", 100);
+        }
+    }
+    
+    function modifyInfo()
+    {
+    //    alert("aa");
+    
+        var targeturl = "/advicebuzheng/showapplyinfo.do?flownumber=2019R11L1407273&type=R11";
+        window.location.href=targeturl;
+    }
+    
+    function submitInfo()
+    {
+        var targeturl = "/auditflow/Submission.do?flownumber=2019R11L1407273";
+    //    alert(targeturl);
+        if(confirm("确认提交后将不能进行再次修改！")){
+            window.location.href=targeturl;
+            // 刷新父页面
+             if(window.opener)
+             {
+                 window.opener.location.reload();
+             }
+        }
+    
+    }
+    </script>
+    </head>
+    
+    <body onload="loadingIframeDiv();fun1();">
+    
+    <div class="printDiv Noprint">
+    
+    
+    
+    
+        <INPUT onclick="javascript:printCertificate();" type="button" value="打印" name="button_print" />
+        <INPUT onclick="javascript:printCertificate2();" type="button" value="弹窗打印" name="button_print" />
+    
+        <INPUT onclick="javascript:window.close();" type="button" value="关闭窗口" />
+    
+    </div>
+    <div id="waitDiv" style="text-align:center; padding:10px 0px 0px 0px;">正在加载，请稍后......</div>
+    <div id="iframeDiv" class="printBody" >
+        
+        
+        <iframe id="printIframe" name="printIframe" frameborder="0" scrolling="no"
+                src="/pengyuanfen_template_content.html"
+                style="border:1px solid #336699; text-align: center; margin: auto; display:none;"></iframe>
+    </div>
+    </body>
+    </html>

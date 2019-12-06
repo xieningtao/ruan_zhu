@@ -1,11 +1,8 @@
 <template>
   <div id="container">
-    <textarea rows="55" cols="100" v-model="message" placeholder="输入代码"></textarea>
-
-    <!-- <button class="middle_btn" type="button" v-on:click="doTransform()">转换</button> -->
-
+    <textarea rows="45" cols="100" v-model="message" placeholder="输入代码"></textarea>
     <el-button type="primary" v-on:click="doTransform()">转换</el-button>
-    <textarea rows="55" cols="100" readonly="readonly" v-model="transformResult" placeholder="输入代码"></textarea>
+    <textarea rows="45" cols="100" readonly="readonly" v-model="transformResult" placeholder="直接黏贴格式化后的代码即可"></textarea>
   </div>
 </template>
 
@@ -42,7 +39,7 @@ export default {
 <style>
 
 #container{
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

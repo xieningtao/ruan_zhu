@@ -1,5 +1,7 @@
 <template>
+
     <div>
+        <h1 class="code_header">代码转换器</h1>
         <transform-code></transform-code>
     </div>
 </template>
@@ -15,4 +17,7 @@ export default {
 
 <style >
 
+.code_header{
+    text-align: center
+}
 </style>
