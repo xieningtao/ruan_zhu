@@ -158,10 +158,11 @@ export default {
   data() {
     return {
       request_name: "",
-      doc_url:"http://localhost:8088"
+      doc_url:""
     };
   },
   created: function() {
+    this.doc_url = process.env.NODE_ENV === 'production' ? "http://pengyf.fun:8088":"http://localhost:8088"
     this.request_name = Date.parse(new Date());
   },
   methods: {
