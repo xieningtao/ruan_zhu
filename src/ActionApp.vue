@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <h1 class="code_header">代码转换器</h1>
+        <h1 class="code_header">软著代码转换器</h1>
         <transform-code></transform-code>
     </div>
 </template>
