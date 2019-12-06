@@ -83,13 +83,13 @@
                     <div class="card_link">
                       <el-link
                         class="link_item"
-                        href="http://www.ccopyright.com.cn/"
+                         :href="`${doc_url}/introduction_template.docx`"
                         type="primary"
                         target="_blank"
                       >下载模板</el-link>
                       <el-link
                         class="link_item"
-                        href="action.html"
+                         :href="`${doc_url}/introducation_example.docx`"
                         type="primary"
                         target="_blank"
                       >查看例子</el-link>
