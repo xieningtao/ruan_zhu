@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '/ruan_zhu/dist/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
     pages:{
         
         index:{
